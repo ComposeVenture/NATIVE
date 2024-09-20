@@ -54,9 +54,5 @@ const displaySyncScreen = () => {
         </p>
         <button id='SyncApp' class='forestgreen'>Sync Device</button>
     `);
-
-    setTimeout(() => {
-        NEWPAGE(`<h1>Hello</h1>`)
-    }, 3000);
 };
 

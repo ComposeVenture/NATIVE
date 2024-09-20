@@ -24,7 +24,3 @@ const RELOADNEWPAGE=()=>{Android.goBack()};
 const DEVICEEMAILS=(callback)=>{var contactsData=Android.getEmails();var parsedContacts=JSON.parse(contactsData);callback(parsedContacts)};
 const STARTFOREGROUND=(title, message)=>{Android.startForegroundService(title, message)};
 const STOPFOREGROUND=()=>{Android.stopForegroundService()};
-const CAMERA=()=>{Android.openCamera()};
-const NEWPAGE=(url)=>{
-    Android.loadNewUrl(url)
-}
