@@ -1,4 +1,4 @@
-package com.composeventure.compose_cinematic;
+package com.composeventure.compose_craft;
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;

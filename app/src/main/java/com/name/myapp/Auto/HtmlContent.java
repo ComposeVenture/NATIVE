@@ -1,4 +1,4 @@
-package com.composeventure.compose_cinematic;
+package com.composeventure.compose_craft;
 public class HtmlContent {
     public static String getHtml() {
         return "<!DOCTYPE html>"
@@ -13,6 +13,7 @@ public class HtmlContent {
         + "<script src=\"file:///android_res/raw/environment.js\" defer></script>"
         + "<script src=\"file:///android_res/raw/functions.js\"></script>"
         + "<script src=\"file:///android_res/raw/launcher.js\"></script>"
+        + "<script src=\"file:///android_res/raw/library.js\"></script>"
         + "<script src=\"file:///android_res/raw/modules.js\"></script>"
         + "<script src=\"file:///android_res/raw/plugins.js\"></script>"
         + "<script src=\"file:///android_res/raw/whiteicons.js\"></script>"

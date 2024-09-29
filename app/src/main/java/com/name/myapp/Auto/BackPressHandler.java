@@ -1,4 +1,4 @@
-package com.composeventure.compose_cinematic;
+package com.composeventure.compose_craft;
 import android.app.Activity;
 import android.webkit.WebView;
 public class BackPressHandler {

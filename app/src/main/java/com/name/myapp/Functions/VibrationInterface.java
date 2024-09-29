@@ -1,4 +1,4 @@
-package com.composeventure.compose_cinematic;
+package com.composeventure.compose_craft;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.VibrationEffect;

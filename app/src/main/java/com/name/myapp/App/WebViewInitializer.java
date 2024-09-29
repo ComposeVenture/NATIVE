@@ -1,4 +1,4 @@
-package com.composeventure.compose_cinematic;
+package com.composeventure.compose_craft;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.webkit.WebSettings;
