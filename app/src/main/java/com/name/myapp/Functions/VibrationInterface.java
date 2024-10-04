@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft;
+package com.composeventure.compose_craft_upoader;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.VibrationEffect;

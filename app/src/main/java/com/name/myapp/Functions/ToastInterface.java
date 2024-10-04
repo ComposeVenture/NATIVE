@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft;
+package com.composeventure.compose_craft_upoader;
 import android.content.Context;
 import android.webkit.JavascriptInterface;
 import android.widget.Toast;

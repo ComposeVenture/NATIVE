@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft;
+package com.composeventure.compose_craft_upoader;
 public class HtmlContent {
     public static String getHtml() {
         return "<!DOCTYPE html>"

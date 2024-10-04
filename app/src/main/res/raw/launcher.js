@@ -8,7 +8,7 @@ const APPSTART = () => {
                 <h1>${APPNAMED} Is Checking For Updates </h1>
                 <p id='Message'>Please Wait</p>
                 <button id='LoaderButton'></button>
-                <img class='AppLogo' src='${APPLOGO}'/>
+                <img class='AppLogo' src='${WHITESYNCICON}'/>
                 <p>${APPMOTTO}</p>
             `);
             const LoaderButton=document.querySelector('#LoaderButton');
