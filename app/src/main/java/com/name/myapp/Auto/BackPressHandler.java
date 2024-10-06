@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft_upoader;
+package com.composeventure.compose_store;
 import android.app.Activity;
 import android.webkit.WebView;
 public class BackPressHandler {

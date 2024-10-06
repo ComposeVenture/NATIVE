@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft_upoader;
+package com.composeventure.compose_store;
 import android.Manifest;
 import android.app.Activity;
 import android.content.ContentProviderOperation;

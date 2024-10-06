@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft_upoader;
+package com.composeventure.compose_store;
 import android.content.Context;
 import android.webkit.JavascriptInterface;
 import android.os.BatteryManager;

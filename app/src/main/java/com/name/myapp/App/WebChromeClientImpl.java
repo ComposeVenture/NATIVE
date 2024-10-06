@@ -1,4 +1,4 @@
-package com.composeventure.compose_craft_upoader;
+package com.composeventure.compose_store;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.webkit.JsPromptResult;

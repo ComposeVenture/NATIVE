@@ -1,4 +1,4 @@
-const APPMOTTO='Upload Craft';
-const APPNAMED='WinkSta Manager';
-const APPID='WinkstaUploader';
-const APPCOLORS='#011F4B';
+const APPMOTTO="Favorite Apps and Games From E-corp";
+const APPNAMED='Compose Store';
+const APPID='AppStore';
+const APPCOLORS='#000000';
