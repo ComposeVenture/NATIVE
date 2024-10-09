@@ -64,7 +64,6 @@ const APPLOAD=()=>{
                 })
                 .catch(error=>{
                     if (localStorage.getItem('Environment')==='Production') {
-
                         Android.showToast('Error Occured ,Try Again');
                     } else {
                         console.log(error);
