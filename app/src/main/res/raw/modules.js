@@ -1,1 +1,0 @@
-const APPLOGO='file:///android_res/drawable/app_icon.jpg';

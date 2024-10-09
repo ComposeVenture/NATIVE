@@ -1,4 +1,4 @@
-package com.composeventure.compose_store;
+package com.composeventure.compose_contacts;
 import android.Manifest;
 import android.app.Activity;
 import android.content.ContentProviderOperation;

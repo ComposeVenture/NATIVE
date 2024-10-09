@@ -1,4 +1,4 @@
-package com.composeventure.compose_store;
+package com.composeventure.compose_contacts;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.webkit.WebSettings;
