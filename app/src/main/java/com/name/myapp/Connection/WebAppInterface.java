@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.naweriindustries.fiskon;
 import android.content.Context;
 import android.content.Intent;
 import android.webkit.JavascriptInterface;
@@ -12,6 +12,7 @@ public class WebAppInterface {
     private BatteryStatusInterface batteryStatusInterface;
     private FileManager fileManager;
     private ToastInterface toastInterface;
+    private GeoLocationInterface geoLocationInterface;
     private Context context;
     private WebView webView;
     public WebAppInterface(Context context, WebView webView) {
@@ -25,6 +26,7 @@ public class WebAppInterface {
         this.batteryStatusInterface = new BatteryStatusInterface(context);
         this.fileManager = new FileManager(context);
         this.toastInterface = new ToastInterface(context);
+        this.geoLocationInterface = new GeoLocationInterface(context);
     }
     @JavascriptInterface
     public void vibrate(long milliseconds) {
@@ -123,5 +125,24 @@ public class WebAppInterface {
     public void stopForegroundService() {
         Intent intent = new Intent(context, ForegroundService.class);
         context.stopService(intent);
+    }
+    @JavascriptInterface
+    public void requestLocation() {
+        geoLocationInterface.requestLocation();
+    }
+
+    @JavascriptInterface
+    public double getLatitude() {
+        return geoLocationInterface.getLatitude();
+    }
+
+    @JavascriptInterface
+    public double getLongitude() {
+        return geoLocationInterface.getLongitude();
+    }
+
+    @JavascriptInterface
+    public void stopLocationUpdates() {
+        geoLocationInterface.stopLocationUpdates();
     }
 }

@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.naweriindustries.fiskon;
 public class HtmlContent {
     public static String getHtml() {
         return "<!DOCTYPE html>"
