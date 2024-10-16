@@ -1,6 +1,6 @@
 body{
-    color: #000000;
-    background: #ffffff;
+    color: #ffffff;
+    background: #000000;
 }
 .body{
     position: fixed;
@@ -14,13 +14,15 @@ body{
     font-family: sans-serif;
     width: 100%;
     height: 100%;
+    margin: auto;
+    padding: auto;
 }
 .UpdateImage{
     position: relative;
-    width: 50%;
-    height: 30%;
-    margin-top: 15%;
-    background: #6b6868;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    background: #dcdcdc80;
     padding: 20%;
     border-radius: 100%;
 }

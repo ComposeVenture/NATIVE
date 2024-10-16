@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.webkit.WebSettings;

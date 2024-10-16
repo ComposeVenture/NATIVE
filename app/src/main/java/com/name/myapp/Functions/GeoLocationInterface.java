@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 
 import android.Manifest;
 import android.app.Activity;
@@ -60,7 +60,6 @@ public class GeoLocationInterface {
                 public void onLocationChanged(Location location) {
                     latitude = location.getLatitude();
                     longitude = location.getLongitude();
-                    Toast.makeText(context, "Location updated: Lat: " + latitude + ", Lon: " + longitude, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

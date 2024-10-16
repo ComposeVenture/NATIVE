@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 import android.content.Context;
 import android.webkit.JavascriptInterface;
 import android.os.BatteryManager;

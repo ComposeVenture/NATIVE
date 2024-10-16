@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.webkit.JsPromptResult;

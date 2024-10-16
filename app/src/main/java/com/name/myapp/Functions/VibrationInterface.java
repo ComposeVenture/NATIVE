@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.VibrationEffect;

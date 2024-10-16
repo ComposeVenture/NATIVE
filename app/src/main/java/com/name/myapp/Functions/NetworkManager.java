@@ -1,4 +1,4 @@
-package com.naweriindustries.fiskon;
+package com.composeventure.compose_contacts;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;

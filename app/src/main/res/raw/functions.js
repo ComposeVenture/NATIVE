@@ -12,7 +12,7 @@ body.innerHTML=`
 const ROUTECSS=(DATA)=>{ const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 const ROUTEJS=(DATA)=>{ const styleElement = document.createElement("script"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 localStorage.setItem('Environment','Production');
-const NAME='NaweriFiskon';
+const NAME='Connections';
 ROUTECSS(localStorage.getItem('Styles'));ROUTECSS(localStorage.getItem('AppStyles'));ROUTECSS(localStorage.getItem('Classes'));ROUTECSS(localStorage.getItem('CloudStyles'));ROUTECSS(localStorage.getItem('Colors'));ROUTECSS(localStorage.getItem('TemplateStyles'));
 ROUTEJS(localStorage.getItem('Apis'));ROUTEJS(localStorage.getItem('AppFunctions'));ROUTEJS(localStorage.getItem('CloudFunctions'));ROUTEJS(localStorage.getItem('Components'));ROUTEJS(localStorage.getItem('Constants'));ROUTEJS(localStorage.getItem('Functions'));ROUTEJS(localStorage.getItem('Json'));ROUTEJS(localStorage.getItem('Library'));ROUTEJS(localStorage.getItem('Links'));ROUTEJS(localStorage.getItem('Module'));ROUTEJS(localStorage.getItem('Plugins'));ROUTEJS(localStorage.getItem('TemplateFunctions'));ROUTEJS(localStorage.getItem('Templates'));
 const APPLOAD=()=>{
