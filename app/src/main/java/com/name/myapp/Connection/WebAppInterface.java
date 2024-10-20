@@ -16,7 +16,6 @@ public class WebAppInterface {
     private FileManager fileManager;
     private ToastInterface toastInterface;
     private GeoLocationInterface geoLocationInterface;
-    private CameraInterface cameraInterface;
     private Context context;
     private WebView webView;
 
@@ -32,7 +31,6 @@ public class WebAppInterface {
         this.fileManager = new FileManager(context);
         this.toastInterface = new ToastInterface(context);
         this.geoLocationInterface = new GeoLocationInterface(context);
-        this.cameraInterface = new CameraInterface(context);
     }
 
     @JavascriptInterface
@@ -174,20 +172,5 @@ public class WebAppInterface {
     @JavascriptInterface
     public void stopLocationUpdates() {
         geoLocationInterface.stopLocationUpdates();
-    }
-
-    @JavascriptInterface
-    public void openCamera() {
-        cameraInterface.openCamera();
-    }
-
-    @JavascriptInterface
-    public String getCurrentPhotoPath() {
-        return cameraInterface.getCurrentPhotoPath();
-    }
-
-    @JavascriptInterface
-    public void handleCameraPermissions(int requestCode, String[] permissions, int[] grantResults) {
-        cameraInterface.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

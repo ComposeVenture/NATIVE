@@ -10,7 +10,6 @@ public class MainActivity extends Activity {
     private WebChromeClientImpl webChromeClientImpl;
     private BackPressHandler backPressHandler;
     private FileChooserHandler fileChooserHandler;
-    private CameraInterface cameraInterface; // Declare the cameraInterface
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +30,6 @@ public class MainActivity extends Activity {
         
         webView.addJavascriptInterface(new WebAppInterface(this, webView), "Android");
 
-        // Initialize cameraInterface here
-        cameraInterface = new CameraInterface(this);
-
         backPressHandler = new BackPressHandler(this, webView);
         fileChooserHandler = new FileChooserHandler(webChromeClientImpl);
     }
@@ -47,12 +43,5 @@ public class MainActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         fileChooserHandler.handleActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        // Call the handlePermissionResult method on the cameraInterface instance
-        cameraInterface.handlePermissionResult(requestCode, permissions, grantResults);
     }
 }
