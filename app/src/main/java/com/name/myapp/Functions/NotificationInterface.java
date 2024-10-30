@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.composeventure.compose_cinematic;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

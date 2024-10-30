@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.composeventure.compose_cinematic;
 
 import android.app.Activity;
 import android.content.Intent;

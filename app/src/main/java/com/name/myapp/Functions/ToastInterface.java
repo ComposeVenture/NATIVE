@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.composeventure.compose_cinematic;
 import android.content.Context;
 import android.webkit.JavascriptInterface;
 import android.widget.Toast;

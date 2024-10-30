@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.composeventure.compose_cinematic;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.webkit.JsPromptResult;

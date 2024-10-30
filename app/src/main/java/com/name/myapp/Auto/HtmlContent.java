@@ -1,4 +1,4 @@
-package com.composeventure.compose_contacts;
+package com.composeventure.compose_cinematic;
 public class HtmlContent {
     public static String getHtml() {
         return "<!DOCTYPE html>"
