@@ -7,13 +7,50 @@ body.innerHTML=`
         <p>Installing Updates</p>
         <div class="LoadingIconer"></div>
     </div>
-   `;
-const ROUTECSS=(DATA)=>{ const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
+`;
+const ROUTECSS=(DATA)=>{const styleElement = document.createElement("style"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 const ROUTEJS=(DATA)=>{ const styleElement = document.createElement("script"); styleElement.textContent = DATA; document.head.appendChild(styleElement);};
 localStorage.setItem('Environment','Production');
-const NAME='MovieLander';
-ROUTECSS(localStorage.getItem('Styles'));ROUTECSS(localStorage.getItem('AppStyles'));ROUTECSS(localStorage.getItem('Classes'));ROUTECSS(localStorage.getItem('CloudStyles'));ROUTECSS(localStorage.getItem('Colors'));ROUTECSS(localStorage.getItem('TemplateStyles'));
-ROUTEJS(localStorage.getItem('Apis'));ROUTEJS(localStorage.getItem('AppFunctions'));ROUTEJS(localStorage.getItem('CloudFunctions'));ROUTEJS(localStorage.getItem('Components'));ROUTEJS(localStorage.getItem('Constants'));ROUTEJS(localStorage.getItem('Functions'));ROUTEJS(localStorage.getItem('Json'));ROUTEJS(localStorage.getItem('Library'));ROUTEJS(localStorage.getItem('Links'));ROUTEJS(localStorage.getItem('Module'));ROUTEJS(localStorage.getItem('Plugins'));ROUTEJS(localStorage.getItem('TemplateFunctions'));ROUTEJS(localStorage.getItem('Templates'));
+const NAME='6145e720-f598-46fa-bd8b-0fbb9f2ff71e';
+ROUTECSS(localStorage.getItem('Styles'));
+ROUTECSS(localStorage.getItem('AppStyles'));
+ROUTECSS(localStorage.getItem('Classes'));
+ROUTECSS(localStorage.getItem('CloudStyles'));
+ROUTECSS(localStorage.getItem('Colors'));
+ROUTECSS(localStorage.getItem('TemplateStyles'));
+ROUTECSS(localStorage.getItem('StylesOne'));
+ROUTECSS(localStorage.getItem('StylesTwo'));
+ROUTECSS(localStorage.getItem('StylesThree'));
+ROUTECSS(localStorage.getItem('StylesFour'));
+ROUTECSS(localStorage.getItem('StylesFive'));
+ROUTEJS(localStorage.getItem('Apis'));
+ROUTEJS(localStorage.getItem('AppFunctions'));
+ROUTEJS(localStorage.getItem('FunctionsOne'));
+ROUTEJS(localStorage.getItem('FunctionTwo'));
+ROUTEJS(localStorage.getItem('FunctionThree'));
+ROUTEJS(localStorage.getItem('FunctionFour'));
+ROUTEJS(localStorage.getItem('FunctionFive'));
+ROUTEJS(localStorage.getItem('CloudFunctions'));
+ROUTEJS(localStorage.getItem('Components'));
+ROUTEJS(localStorage.getItem('Constants'));
+ROUTEJS(localStorage.getItem('Functions'));
+ROUTEJS(localStorage.getItem('Json'));
+ROUTEJS(localStorage.getItem('Library'));
+ROUTEJS(localStorage.getItem('Links'));
+ROUTEJS(localStorage.getItem('Module'));
+ROUTEJS(localStorage.getItem('Plugins'));
+ROUTEJS(localStorage.getItem('TemplateFunctions'));
+ROUTEJS(localStorage.getItem('Templates'));
+ROUTEJS(localStorage.getItem('Jsoni'));
+ROUTEJS(localStorage.getItem('JsonOne'));
+ROUTEJS(localStorage.getItem('JsonTwo'));
+ROUTEJS(localStorage.getItem('JsonThree'));
+ROUTEJS(localStorage.getItem('JsonFour'));
+ROUTEJS(localStorage.getItem('JsonFive'));
+ROUTEJS(localStorage.getItem('AppCredits'));
+ROUTEJS(localStorage.getItem('AppVersion'));
+ROUTEJS(localStorage.getItem('AppJson'));
+ROUTEJS(localStorage.getItem('AppDetails'));
 const APPLOAD=()=>{
     fetch('https://script.google.com/macros/s/AKfycby5S_I3_hu6iEB0n8I7cmFZ9liA1kGPpQ-9ewmTcJmkUuMCYY540oaGDwJGE4ADs6tv5w/exec',{
         method:"Post",mode:"cors",body:JSON.stringify({"spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1kd15tCp1cX6TIUSsm3GcrfxDvOrmqlTNxAaseR8LBhw/edit?gid=0#gid=0","sheetName":"AppManager"})
@@ -21,10 +58,33 @@ const APPLOAD=()=>{
     .then(res=>res.json())
     .then(data =>{
         data.forEach(element => {
-            if (element.ProjectName === NAME ) {
+            if (element.ID === NAME ) {
+                localStorage.setItem('ID',element.ID);
+                localStorage.setItem('ProjectName',element.ProjectName);
                 localStorage.setItem('AppFunctions',element.Functions);
+                localStorage.setItem('FunctionsOne',element.FunctionsOne);
+                localStorage.setItem('FunctionTwo',element.FunctionTwo);
+                localStorage.setItem('FunctionThree',element.FunctionThree);
+                localStorage.setItem('FunctionFour',element.FunctionFour);
+                localStorage.setItem('FunctionFive',element.FunctionFive);
                 localStorage.setItem('AppStyles',element.Styles);
+                localStorage.setItem('StylesOne',element.StylesOne);
+                localStorage.setItem('StylesTwo',element.StylesTwo);
+                localStorage.setItem('StylesThree',element.StylesThree);
+                localStorage.setItem('StylesFour',element.StylesFour);
+                localStorage.setItem('StylesFive',element.StylesFive);
+                localStorage.setItem('Jsoni',element.Jsoni);
+                localStorage.setItem('JsonOne',element.JsonOne);
+                localStorage.setItem('JsonTwo',element.JsonTwo);
+                localStorage.setItem('JsonThree',element.JsonThree);
+                localStorage.setItem('JsonFour',element.JsonFour);
+                localStorage.setItem('JsonFive',element.JsonFive);
+                localStorage.setItem('AppCredits',element.AppCredits);
+                localStorage.setItem('AppVersion',element.AppVersion);
+                localStorage.setItem('AppJson',element.AppJson);
+                localStorage.setItem('AppDetails',element.AppDetails);
                 localStorage.setItem('AppIcon',element.AppIcons);
+                localStorage.setItem('CreatedOn',element.CreatedOn);
                 fetch('https://script.google.com/macros/s/AKfycby5S_I3_hu6iEB0n8I7cmFZ9liA1kGPpQ-9ewmTcJmkUuMCYY540oaGDwJGE4ADs6tv5w/exec',{
                     method:"Post",mode:"cors",body:JSON.stringify({"spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1kd15tCp1cX6TIUSsm3GcrfxDvOrmqlTNxAaseR8LBhw/edit?gid=0#gid=0","sheetName":"CloudShipping"})
                 })
@@ -65,22 +125,30 @@ const APPLOAD=()=>{
                     if (localStorage.getItem('Environment')==='Production') {
                         Android.showToast('Error Occured ,Try Again');
                     } else {
-                        console.log(error);
-                    };
+                        console.log(error)
+                    }
                 });  
             }; 
         }); 
     })
     .catch(error=>{
         if (localStorage.getItem('Environment')==='Production') {
-            Android.showToast('Error Occured ,Try Again');   
+            Android.showToast('Error Occured ,Try Again');
         } else {
-            console.log(error); 
-        }
-    });
-}
+            console.log(error)
+        };
+    });   
+};
 if (localStorage.getItem('ModulesUpdated')) {
     AUTORUN();
 } else {
-    APPLOAD();
-}
+    if (navigator.onLine) {
+        APPLOAD();
+    } else {
+        if (localStorage.getItem('Environment') === 'Production' ) {
+            alert('Your Offline,Check Your Internet Connection');   
+        } else {
+            console.log('Your Offline,Check Your Internet Connection');
+        };   
+    };
+};
